@@ -1,96 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Mysite by studiofnt</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Mysite : 网址" />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Mysite</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Mysite</h1>
-        <p class="header">网址</p>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/studiofnt/mysite/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/studiofnt/mysite/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/studiofnt/mysite">View On GitHub</a></li>
-        </ul>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/studiofnt/mysite">View on GitHub</a>
 
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/studiofnt">studiofnt</a></p>
+          <h1 id="project_title">Mysite</h1>
+          <h2 id="project_tagline">网址</h2>
 
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/studiofnt/mysite/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/studiofnt/mysite/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-      </header>
-      <section>
-        <h1>
-<a name="mysite" class="anchor" href="#mysite"><span class="octicon octicon-link"></span></a>mysite</h1>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>PUA主页</p>
 
-<h2>
-<a name="%E7%BD%91%E5%9D%80" class="anchor" href="#%E7%BD%91%E5%9D%80"><span class="octicon octicon-link"></span></a>网址</h2>
+<p>Global setup:</p>
 
-<p>layout: page
-title: Hello World!</p>
+<p>Set up git</p>
 
-<h2>
-<a name="tagline-supporting-tagline" class="anchor" href="#tagline-supporting-tagline"><span class="octicon octicon-link"></span></a>tagline: Supporting tagline</h2>
-
-<p>{% include JB/setup %}</p>
-
-<p>Read <a href="http://jekyllbootstrap.com/usage/jekyll-quick-start.html">Jekyll Quick Start</a></p>
-
-<p>Complete usage and documentation available at: <a href="http://jekyllbootstrap.com">Jekyll Bootstrap</a></p>
-
-<h2>
-<a name="update-author-attributes" class="anchor" href="#update-author-attributes"><span class="octicon octicon-link"></span></a>Update Author Attributes</h2>
-
-<p>In <code>_config.yml</code> remember to specify your own data:</p>
-
-<pre><code>title : My Blog =)
-
-author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
+<pre><code>git config --global user.name "PUA"
+git config --global user.email mars00755@163.com
 </code></pre>
 
-<p>The theme should reference these variables whenever needed.</p>
+<p>Next steps:</p>
 
-<h2>
-<a name="sample-posts" class="anchor" href="#sample-posts"><span class="octicon octicon-link"></span></a>Sample Posts</h2>
-
-<p>This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the <code>_posts/core-samples</code> folder.</p>
-
-<pre><code>$ rm -rf _posts/core-samples
+<pre><code>mkdir pua.github.com
+cd pua.github.com
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin git@github.com:pua/pua.github.com.git
+git push -u origin master
 </code></pre>
 
-<p>Here's a sample "posts list".</p>
+<p>Existing Git Repo?</p>
 
-<ul>
-  {% for post in site.posts %}
-    <li>{{ post.date | date_to_string }} » <a href="%7B%7B%20BASE_PATH%20%7D%7D%7B%7B%20post.url%20%7D%7D">{{ post.title }}</a>
-</li>
-  {% endfor %}
-</ul><h2>
-<a name="to-do" class="anchor" href="#to-do"><span class="octicon octicon-link"></span></a>To-Do</h2>
+<pre><code>cd existing_git_repo
+git remote add origin git@github.com:pua/pua.github.com.git
+git push -u origin master
+</code></pre>
 
-<p>This theme is still unfinished. If you'd like to be added as a contributor, <a href="http://github.com/plusjade/jekyll-bootstrap">please fork</a>!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.</p>
+<p>Importing a Subversion Repo?</p>
+
+<pre><code>Check out the guide for step by step instructions.
+</code></pre>
+
+<p>When you're done:</p>
+
+<p><a href="https://github.com/pua/pua.github.com">Continue</a></p>
       </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Mysite maintained by <a href="https://github.com/studiofnt">studiofnt</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
+
+    
+
   </body>
 </html>
